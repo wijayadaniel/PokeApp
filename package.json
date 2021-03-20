@@ -15,6 +15,7 @@
     "@react-navigation/stack": "^5.14.3",
     "axios": "^0.21.1",
     "expo": "~40.0.0",
+    "expo-app-loading": "^1.0.1",
     "expo-asset": "^8.2.2",
     "expo-font": "^9.0.0",
     "expo-status-bar": "~1.0.3",
@@ -28,10 +29,10 @@
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
-    "prettier": "^2.2.1",
     "@react-native-community/eslint-config": "1.1.0",
     "babel-jest": "25.5.1",
-    "eslint": "6.8.0"
+    "eslint": "6.8.0",
+    "prettier": "^2.2.1"
   },
   "private": true
 }

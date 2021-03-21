@@ -17,7 +17,13 @@ const MainStack = () => {
           headerRight: () => <CompareButton action={'Navigation'} />,
         }}
       />
-      <Stack.Screen name="Details" component={Details} />
+      <Stack.Screen
+        name="Details"
+        component={Details}
+        options={({route}) => {
+          return {title: route.params.name};
+        }}
+      />
       <Stack.Screen
         name="Compare"
         component={Compare}

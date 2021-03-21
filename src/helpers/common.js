@@ -69,3 +69,30 @@ export function capitalize(s) {
   if (typeof s !== 'string') return '';
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
+
+export function InfoParams(detail) {
+  return [
+    {
+      ID: detail.id,
+      'BASE XP': detail.base_experience,
+    },
+    {HEIGHT: detail.height, WEIGHT: detail.weight},
+  ];
+}
+
+export function StatusParams(data) {
+  return [
+    {
+      HP: data.stats[0].base_stat,
+      SPD: data.stats[5].base_stat,
+    },
+    {
+      ATK: data.stats[1].base_stat,
+      'S-ATK': data.stats[3].base_stat,
+    },
+    {
+      DEF: data.stats[2].base_stat,
+      'S-DEF': data.stats[4].base_stat,
+    },
+  ];
+}

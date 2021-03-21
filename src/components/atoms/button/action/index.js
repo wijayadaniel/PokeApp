@@ -1,14 +1,12 @@
 import React from 'react';
 import {Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {common} from '../../../helpers/common';
+import {common} from '../../../../helpers/common';
 
-const LoadMoreButton = ({onLoadMore}) => {
+const ActionButton = ({title, onPress}) => {
   return (
-    <TouchableOpacity
-      style={styles.buttonContainer}
-      onPress={() => onLoadMore()}>
-      <Text style={styles.buttonText}>Load More</Text>
+    <TouchableOpacity style={styles.buttonContainer} onPress={() => onPress()}>
+      <Text style={styles.buttonText}>{title}</Text>
     </TouchableOpacity>
   );
 };
@@ -32,4 +30,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoadMoreButton;
+export default ActionButton;
